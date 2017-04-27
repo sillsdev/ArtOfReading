@@ -1,0 +1,1 @@
+exiftool -E -overwrite_original_in_place -copyright="Copyright, My organization, 2017." -XMP-cc:License="http://creativecommons.org/licenses/by-sa/4.0/" -XMP:Marked="True" -XMP:ReuseAllowed="true"  -XMP:CollectionURI="http://AUrlAboutThisCollection" -XMP:CollectionName="My super collection of images"  PNG/*.png
