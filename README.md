@@ -47,7 +47,7 @@ Before customizing anything, test out your setup by creating the sample collecti
 
 That should creat an /output folder and an /output/processed-images folder, with two png image files.
 
-Now make an an installer. Double click the "installer.iss" file. InnoSetup should run. Click "Build:Compile". That should create "/output/Neato Collection 1.0.exe". Now run that program. When it is done, look in %programdata%\SIL\ImageCollections\. You should see a "Neato Collection".
+Now make an an installer. Double click the "installer.iss" file. InnoSetup should run. Click "Build:Compile". That should create "/output/Shapes Collection 1.0.exe". Now run that program. When it is done, look in %programdata%\SIL\ImageCollections\. You should see a "Shapes".
 
 # Setting up your image files
 
@@ -55,15 +55,16 @@ Copy your images into the /images folder. If your images are in various sub-fold
 
 # Setting up your index
 
-The index is a tab-delimited text file. The first row is heading and iso-639 language codes:
+The index is a tab-delimited, unicode (utf-8) text file. The first row is heading and iso-639 language codes:
 
-    order	filename	artist	country	en	ru	id
+filename(tab)subfolder(tab)artist(tab)country(tab)en(tab)fr(tab)es
 
-Those first four columns must be named *exactly* as shown. The "order" column has to be there, but it's there for some long lost historical reason and will not be used.
+Those first four columns must be named *exactly* as shown.
 
-Following that header row, your index needs a row for each image in the collection. Within a column of index terms for a language, terms are separated by commas:
+Following that header row, your index needs a row for each image in the collection. Within a column of index terms for a language, terms are separated by commas.
+For examlpe, this row is for a file named "B-NA-2". It could end in ".tif", ".png", whatever, the index doesn't care. It is in a subfolder named "Brazil".
 
-    1	B-NA-2		Brazil	bird,bird of prey,hawk,flying	птица,хищная птица	burung,burung pemangsa
+B-NA-2(tab)Brazil(tab)Romero Britto(tab)Brazil(tab)bird,bird of prey,hawk,flying(tab)птица,хищная птица(tab)burung,burung pemangsa
 
 # Processing your images
 
@@ -84,7 +85,7 @@ Double click on the "installer.iss" file. Innosetup should open.
 
 Replace the values of the sample collection with your own values.
 
-Click "Build:Compile". That should create "/output/Neato Collection 1.0.exe".
+Click "Build:Compile". That should create "/output/Shapes Collection 1.0.exe".
 
 Now run that program. When it is done, look in %programdata%\SIL\ImageCollections\. You should see your collection. Finally, run an SIL program that allows inserting images from a gallery (e.g. Bloom 4.0 or greater), and search for one of your images.
 

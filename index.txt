@@ -1,3 +1,4 @@
-order	filename	artist	country	en	ru	id	fr	es	ar	hi	bn	pt	th	sw	zh
-1	B-NA-2		Brazil	bird,bird of prey,hawk,flying	птица,хищная птица,ястреб,летающий	burung,burung pemangsa,burung pemakan daging,terbang,elang	oiseau,oiseau de proie,faucon,volant	pájaro,ave de rapiña,halcón,vuelo	عصفور,طير جارح,صقر,طيران	पक्षी,शिकारी पक्षी,बाज़,उड़ान	পাখি,শিকারী পাখি,বাজপাখি,উড়ন্ত	pássaro,Ave de rapina,falcão,vôo	นก,นกล่าเหยื่อ,เหยี่ยว,การบิน	ndege,ndege mkali,kipanga,kuruka	鸟,鸷鸟,鹰,飞行
-2	B-NA-3		Brazil	bird,toucan	птица,тукан	burung	oiseau,toucan	pájaro,tucán	عصفور,الطوقان طائر	पक्षी,टूकेन	পাখি,দীর্ঘচঁচু পাখী	pássaro,tucano	นก,Toucan	ndege,toucan	鸟,巨嘴鸟
+order	filename	subfolder	artist	country	en	fr	es
+	star		John	USA	star,green	étoile,vert	estrella,verde
+	green rectangle	rectangles	Suzanne	France	green,rectangle,parallelogram	vert,rectangle,parallélogramme	rectángulo,verde,paralelogramo
+	red square	rectangles	Samuel	USA	red,square,rectangle,parallelogram	parallélogramme,carré,rouge	paralelogramo,cuadrado,rojo

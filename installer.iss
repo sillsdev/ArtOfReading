@@ -5,16 +5,16 @@
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (Important!!!!! Replace this with your own guid from https://www.guidgen.com/)
-AppId={{bc5740d7-7497-478d-b2ef-8b0a4a950a7c}
-AppName=Neato Collection
+AppId={{ac5740d7-7497-478d-b2ef-8b0a4a950a7c}
+AppName=Shapes Collection
 AppVersion=1.0.0
 AppPublisher=My Organization
 AppPublisherURL=http://myOrganization.org
-AppSupportURL=http://mySampleCollection.org
-AppUpdatesURL=http://mySampleCollection.org
-DefaultDirName={commonappdata}\SIL\ImageCollections\Neato Collection
-DefaultGroupName=Neato
-OutputBaseFilename= Neato Collection 1.0
+AppSupportURL=http://myShapesCollection.org
+AppUpdatesURL=http://myShapesCollection.org
+DefaultDirName={commonappdata}\SIL\ImageCollections\Shapes
+DefaultGroupName=Shapes
+OutputBaseFilename= Shapes Collection 1.0
 DisableProgramGroupPage=yes
 LicenseFile=InstallerLicense.txt
 InfoBeforeFile=info-to-show-in-installer.txt
