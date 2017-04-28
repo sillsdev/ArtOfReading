@@ -14,7 +14,10 @@ set COLLECTIONURI=http://myOrganization.org/aboutShapesImages
 set COLLECTIONNAME=Shapes Images
 REM this is optional; you might like to prefix all images wit something indicating the collection it came from. If not, set to just PREFIX=
 set PREFIX=shape_
-REM this is optional, if you want to watermark each image. Otherwise, set to ""
+REM This is optional, if you want to watermark each image. Otherwise, set to ""
+REM Note that the approach used below is pretty ugly, and we don't use it for Art Of Reading.
+REM It would not be hard to instead have a the watermark done as a semi-transparent image instead of this black text.
+REM But either way, it's going to expand/shrink with the image, so not so practicle.
 set WATERMARK="Shapes.CC-BY-SA"
 REM ----------- END OF LINES THAT YOU NORMALY CUSTOMIZE FOR EACH COLLECTION -------------------------
 
