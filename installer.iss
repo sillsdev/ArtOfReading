@@ -5,20 +5,20 @@
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (Important!!!!! Replace this with your own guid from https://www.guidgen.com/)
-AppId={bc5740d7-7497-478d-b2ef-8b0a4a950a7c}
-AppName=My Sample Collection
+AppId={{bc5740d7-7497-478d-b2ef-8b0a4a950a7c}
+AppName=Neato Collection
 AppVersion=1.0.0
 AppPublisher=My Organization
 AppPublisherURL=http://myOrganization.org
 AppSupportURL=http://mySampleCollection.org
 AppUpdatesURL=http://mySampleCollection.org
-DefaultDirName={commonappdata}\SIL\ImageCollections\My Sample Collection
-DefaultGroupName=Art Of Reading Free
+DefaultDirName={commonappdata}\SIL\ImageCollections\Neato Collection
+DefaultGroupName=Neato
+OutputBaseFilename= Neato Collection 1.0
 DisableProgramGroupPage=yes
-LicenseFile=License.txt
+LicenseFile=InstallerLicense.txt
 InfoBeforeFile=info-to-show-in-installer.txt
 OutputDir=output
-OutputBaseFilename= My Sample Collection
 Compression=none
 SourceDir=".\"
 DisableDirPage=yes
@@ -30,6 +30,6 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 [Files]
 Source: "output\processed-images\**.png"; DestDir: "{app}\images"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "index.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "InstallerLicense.txt"; DestDir: "{app}"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files

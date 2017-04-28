@@ -1,6 +1,21 @@
-This repository is a starting point for making your own image collections that work with SIL software (e.g. Bloom & WeSay). The following instructions are for  people working in Windows.
+This repository is a starting point for making your own image collections that work with SIL software (e.g. Bloom & WeSay). It includes:
 
-# Setting up programs on you machine
+* a sample collection with a multilingual index
+* a windows batch file that
+    * converts all images to highly compressed png's
+    * embeds intellectual property information in each image
+    * optionally watermarks each image
+    * optionally adds a prefix to each image file
+* an installer setup
+
+
+The following instructions are for people working in Windows, but could be readily adapted for Linux.
+
+# 1) Clone this repository into your own github account.
+
+(Click the grean 'clone' button)
+
+# 2) Set up programs on you machine
 
 ## ExifTool
 
@@ -24,13 +39,31 @@ PNGOut.exe is used to compress the daylights out of the png. Get it here: http:/
 
 InnoSetup will make your installer. Get it here: http://www.jrsoftware.org/isdl.php
 
+# 2) See if you can create the Sample Collection
+
+Before customizing anything, test out your setup by creating the sample collection that comes with this project. Open a command prompt window, cd to the project folder, and run
+
+    process-images.bat
+
+That should creat an /output folder and an /output/processed-images folder, with two png image files.
+
+Now make an an installer. Double click the "installer.iss" file. InnoSetup should run. Click "Build:Compile". That should create "/output/Neato Collection 1.0.exe". Now run that program. When it is done, look in %programdata%\SIL\ImageCollections\. You should see a "Neato Collection".
+
 # Setting up your image files
 
-todo
+Copy your images into the /images folder. If your images are in various sub-folders, that's ok.
 
 # Setting up your index
 
-todo
+The index is a tab-delimited text file. The first row is heading and iso-639 language codes:
+
+    order	filename	artist	country	en	ru	id
+
+Those first four columns must be named *exactly* as shown. The "order" column has to be there, but it's there for some long lost historical reason and will not be used.
+
+Following that header row, your index needs a row for each image in the collection. Within a column of index terms for a language, terms are separated by commas:
+
+    1	B-NA-2		Brazil	bird,bird of prey,hawk,flying	птица,хищная птица	burung,burung pemangsa
 
 # Processing your images
 
@@ -43,20 +76,20 @@ For each image in /images/
 	Compress it really well, using PNGOut.
 	Push in metadata, using exiftool.
 
+There is no currently no way here to read the index and embed things like the artist name or index terms into the image.
+
 # Make the installer
 
-todo
+Double click on the "installer.iss" file. Innosetup should open.
 
--------------------------------------
-Warnings
--------------------------------------
-This is fine, it's what this program always says:
-	"convert: Unknown field with tag 37724 (0x935c) encountered. `TIFFReadDirectory' @ warning/...."
+Replace the values of the sample collection with your own values.
 
--------------------------------------
-Relevant documentation on metadata
--------------------------------------
+Click "Build:Compile". That should create "/output/Neato Collection 1.0.exe".
 
+Now run that program. When it is done, look in %programdata%\SIL\ImageCollections\. You should see your collection. Finally, run an SIL program that allows inserting images from a gallery (e.g. Bloom 4.0 or greater), and search for one of your images.
+
+---
+## Relevant documentation on metadata
 
 http://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/XMP.htm
 

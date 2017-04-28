@@ -1,0 +1,1 @@
+Put the license that the installer should see in this file.
