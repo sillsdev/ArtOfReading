@@ -5,16 +5,16 @@
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (Important!!!!! Replace this with your own guid from https://www.guidgen.com/)
-AppId={{ac5740d7-7497-478d-b2ef-8b0a4a950a7c}
-AppName=Shapes Collection
-AppVersion=1.0.0
-AppPublisher=My Organization
-AppPublisherURL=http://myOrganization.org
-AppSupportURL=http://myShapesCollection.org
-AppUpdatesURL=http://myShapesCollection.org
-DefaultDirName={commonappdata}\SIL\ImageCollections\Shapes
-DefaultGroupName=Shapes
-OutputBaseFilename= Shapes Collection 1.0
+AppId={{EABF2D6A-B9B9-48B1-8CC2-F7FEA667B653}
+AppName=Art Of Reading Free
+AppVersion=3.3.0
+AppPublisher=SIL International
+AppPublisherURL=http://SIL.org
+AppSupportURL=http://bloomlibrary.org/#/artofreading
+AppUpdatesURL=http://bloomlibrary.org/#/artofreading
+DefaultDirName={commonappdata}\SIL\ImageCollections\Art Of Reading
+DefaultGroupName=Art Of Reading Free
+OutputBaseFilename= Art Of Reading Free Setup 3.3
 DisableProgramGroupPage=yes
 LicenseFile=InstallerLicense.txt
 InfoBeforeFile=info-to-show-in-installer.txt

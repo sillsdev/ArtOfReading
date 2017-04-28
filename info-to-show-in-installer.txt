@@ -1,1 +1,11 @@
-Place any information you'd like the installer to show in this file.
+Note: this is not the full "International Illustrations: The Art Of Reading" product, which is available from http://ethnologue.com.  That product includes 3rd-party commercial software for finding the image you want.
+
+Instead, this package contains only the images themselves, which we can distribute freely because they are under a Creative Commons License.  This package is intended for use with applications which support it, namely WeSay and Bloom. These are free, open-source applications from SIL.
+
+A special feature of this package is that we have embedded, in the image files themselves, information on where they came from, what their license is, etc. This will allow programs to help you make sure you are using the images legally. See
+
+Once this package is installed, WeSay and Bloom will automatically find and use it.
+
+http://wesay.palaso.org
+http://bloomlibrary.org
+http://www.ethnologue.com/show_product.asp?isbn=9781556712418
