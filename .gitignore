@@ -1,2 +1,6 @@
 output
 images*
+.settings
+.idea
+node_modules
+*-compiled.js*
