@@ -7,18 +7,18 @@ REM variable (hopefully the installers will do  that for you?): imagemagick, exi
 
 REM ----------- BEGIN LINES THAT YOU NORMALY CUSTOMIZE FOR EACH COLLECTION -------------------------
 REM Important! Do not follow the equal sign with a space.
-set COPYRIGHT=Copyright My Organization 2017
+set COPYRIGHT=Copyright SIL International 2009
 set LICENSE=http://creativecommons.org/licenses/by-sa/4.0/
-set ATTRIBUTIONURL=http://myOrganization.org
-set COLLECTIONURI=http://myOrganization.org/aboutShapesImages
-set COLLECTIONNAME=Shapes Images
+set ATTRIBUTIONURL=http://sil.org
+set COLLECTIONURI=https://www.sil.org/resources/publications/entry/51200
+set COLLECTIONNAME=International Illustrations; The Art Of Reading 3.0
 REM this is optional; you might like to prefix all images wit something indicating the collection it came from. If not, set to just PREFIX=
-set PREFIX=shape_
+set PREFIX=aor_
 REM This is optional, if you want to watermark each image. Otherwise, set to ""
 REM Note that the approach used below is pretty ugly, and we don't use it for Art Of Reading.
 REM It would not be hard to instead have a the watermark done as a semi-transparent image instead of this black text.
 REM But either way, it's going to expand/shrink with the image, so not so practicle.
-set WATERMARK="Shapes.CC-BY-SA"
+set WATERMARK=""
 REM ----------- END OF LINES THAT YOU NORMALY CUSTOMIZE FOR EACH COLLECTION -------------------------
 
 
