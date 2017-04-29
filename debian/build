@@ -1,0 +1,20 @@
+#!/bin/bash
+HERE=`pwd`
+TARGETS="lucid natty oneiric precise"
+#PUBLISH='PALASO'
+PUBLISH='LINGNET'
+#REVISION=`echo $BUILD_NUMBER | sed -e 's/[:-].*$//'`
+VARIANT='lingnet'
+PRODUCT='art-of-reading'
+ZIPTYPE='gz'
+DEST=${HERE}/../output
+BUILDINGDIR=${HERE}/../building
+
+NO_DPUT=1
+AMD64_MAINBUILD=1
+BUILD_ARCHS="source amd64"
+
+BASE=$(dpkg-parsechangelog -lchangelog| grep ^Vers | cut -d\  -f2 | cut -d\- -f1)
+
+source /home/bob/pbuilder/build.common
+

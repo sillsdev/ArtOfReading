@@ -1,0 +1,29 @@
+Source: art-of-reading
+Section: data
+Priority: optional
+Maintainer: Stephen McConnel <stephen_mcconnel@sil.org>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://bloomlibrary.org/#/art-of-reading
+
+Package: art-of-reading
+Architecture: all
+Depends: ${misc:Depends}
+Description: artwork images collection
+ This collection contains over 11,000 indexed images collected from SIL
+ and national artists around the world.
+ .
+ Black and white line drawings are suitable for use in a wide variety
+ of literacy materials, newsletters, bulletin board displays, and other
+ cultural awareness materials.
+ .
+ Images come from Brazil, Cambodia, Cameroon, Canada, Colombia, D.R. of
+ Congo, India, Indonesia, East Africa, Mexico, Nigeria, Papua New
+ Guinea, Peru, Philippines, Senegal, Sudan, Thailand, and the United
+ States.
+ .
+ Hundreds of universal images like dog, bicycle, book, cup, pencil,
+ snake, etc.
+ .
+ The images may be reused with attribution but may not be modified 
+ and then republished.

@@ -1,0 +1,17 @@
+art-of-reading (3.0.2) stable; urgency=medium
+
+  * Add a multilingual index file.
+
+ -- Stephen McConnel <stephen_mcconnel@sil.org>  Wed, 26 Aug 2015 17:21:20 -0500
+
+art-of-reading (3.0.1) unstable; urgency=low
+
+  * Redo release for native format, based on free Windows installer files.
+
+ -- Stephen McConnel <stephen_mcconnel@sil.org>  Mon, 05 May 2014 11:14:00 -0500
+
+art-of-reading (3.0-1) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Daniel Glassey <daniel_glassey@sil.org>  Wed, 02 May 2012 10:06:40 +0700

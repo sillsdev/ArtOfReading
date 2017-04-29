@@ -1,0 +1,10 @@
+The Debian Package art-of-reading
+---------------------------------
+These images (plus the index.txt and License.txt files) were retrieved from
+the Windows installer ArtOfReading3FreeSetup.exe downloaded from
+http://downloads.palaso.org/ArtOfReading/.  I added the Makefile and the
+debian packaging.  Some reference was made to an earlier package setup done
+by Daniel Glassey, but he bears no responsibility for the content or format
+of this package.
+
+ -- Stephen McConnel <stephen_mcconnel@sil.org>  Mon, 05 May 2014 11:14:00 -0500
