@@ -1,6 +1,6 @@
 // This was used to separate a list of words between those that were English and those that were Indonesian
 
-var googleTranslate = require('google-translate')('AIzaSyA0jyouJn8k4NYqc6XupJ1-Q7hFpAADEgU');
+var googleTranslate = require('google-translate')(apiKey);
 var Sync = require('sync');
 var _ = require('underscore');
 var sleep = require('sleep');

@@ -16,7 +16,7 @@
     different languages.
  */
 
-var googleTranslate = require('google-translate')('AIzaSyA0jyouJn8k4NYqc6XupJ1-Q7hFpAADEgU');
+var googleTranslate = require('google-translate')(apiKey);
 
 var CoffeeScript = require("coffee-script");
 CoffeeScript.register();
