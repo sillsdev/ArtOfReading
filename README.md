@@ -57,18 +57,18 @@ Copy your images into the /images folder. If your images are in various sub-fold
 
 The index is a tab-delimited, unicode (utf-8) text file. The first row is heading and iso-639 language codes:
 
-filename(tab)subfolder(tab)artist(tab)country(tab)en(tab)fr(tab)es
+filename(tab)subfolder(tab)en(tab)fr(tab)es
 
-Those first four columns must be named *exactly* as shown.
+There are only two required columns: filename and at least one language. *subfolder* is optional, use this if your files are not all together in one folder. Any other columns that have more than three letters will be ignored. So for example if you have and "artist" column, that's great, leave it in there. Maybe someday it will be of use.
 
 Following that header row, your index needs a row for each image in the collection. Within a column of index terms for a language, terms are separated by commas.
-For examlpe, this row is for a file named "B-NA-2". It could end in ".tif", ".png", whatever, the index doesn't care. It is in a subfolder named "Brazil".
+For example, this row is for a file named "B-NA-2". It could end in ".tif", ".png", whatever, the index doesn't care. It is in a subfolder named "Brazil".
 
 B-NA-2(tab)Brazil(tab)Romero Britto(tab)Brazil(tab)bird,bird of prey,hawk,flying(tab)птица,хищная птица(tab)burung,burung pemangsa
 
 # Processing your images
 
-The idea is that you want an automated process that will take each image in the images/ directory, get it all ready, and deposit it in the /output/process-images directory. You never commit anything in /output to github; instead the installer maker will gather file from there when it makes the installer.
+The idea is that we need an automated process that will take each image in the images/ directory, get it all ready, and deposit it in the /output/process-images directory. You never commit anything in /output to github; instead the installer maker will gather file from there when it makes the installer. For that we have process-images.bat.
 
 What the process-images.bat batch file does:
 
@@ -77,7 +77,7 @@ For each image in /images/
 	Compress it really well, using PNGOut.
 	Push in metadata, using exiftool.
 
-There is no currently no way here to read the index and embed things like the artist name or index terms into the image.
+There is no currently no way here to read the index and embed things like the artist name or index terms into the image. You may notice that Art Of Reading images do have that, but that was done with some other process. We consider embedding the artist name to be very imporant and helpful, but that is not yet part of this project.
 
 # Make the installer
 

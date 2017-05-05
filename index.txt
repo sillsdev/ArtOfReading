@@ -1,4 +1,4 @@
-order	filename	subfolder	artist	country	en	fr	es
-	star		John	USA	star,green	étoile,vert	estrella,verde
-	green rectangle	rectangles	Suzanne	France	green,rectangle,parallelogram	vert,rectangle,parallélogramme	rectángulo,verde,paralelogramo
-	red square	rectangles	Samuel	USA	red,square,rectangle,parallelogram	parallélogramme,carré,rouge	paralelogramo,cuadrado,rojo
+filename	subfolder	en	fr	es
+star		star,green	étoile,vert	estrella,verde
+green rectangle	rectangles	green,rectangle,parallelogram	vert,rectangle,parallélogramme	rectángulo,verde,paralelogramo
+red square	rectangles	red,square,rectangle,parallelogram	parallélogramme,carré,rouge	paralelogramo,cuadrado,rojo
