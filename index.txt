@@ -1,4 +1,4 @@
-filename	subfolder	en	fr	es
-star		star,green	étoile,vert	estrella,verde
-green rectangle	rectangles	green,rectangle,parallelogram	vert,rectangle,parallélogramme	rectángulo,verde,paralelogramo
-red square	rectangles	red,square,rectangle,parallelogram	parallélogramme,carré,rouge	paralelogramo,cuadrado,rojo
+﻿filename	subfolder	en	fr	es
+shape_star.png		star,green	étoile,vert	estrella,verde
+shape_green rectangle.png	rectangles	green,rectangle,parallelogram	vert,rectangle,parallélogramme	rectángulo,verde,paralelogramo
+shape_red square.png	rectangles	red,box,square,rectangle,parallelogram	parallélogramme,carré,rouge	paralelogramo,cuadrado,rojo
