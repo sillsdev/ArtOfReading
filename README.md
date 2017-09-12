@@ -25,19 +25,32 @@ ExifTool is used to embed your intellectual property information into each image
 
     exiftool -ver
 
+You should see something like
+
+    x:\dev\image-collection-starter>exiftool -ver
+    8.68
+
 ## ImageMagick
 
-ImageMagick can be used to convert you images to PNG. If your collection contains jpgeg photographs or very complicated color drawings that include shading and such, then this is not what you want. Please contact us.
+ImageMagick can be used to convert you images to PNG. If your collection contains jpeg photographs or very complicated color drawings that include shading and such, then this is not what you want. Please contact us.
 
 Get it at http://www.imagemagick.org/script/download.php. Get the first choice under "Windows Binary Release", and verify that if you open a new CMD window, this command works:
 
-    convert --version
+    magick --version
+
+You should see something like
+
+    x:\dev\image-collection-starter>magick --version
+    Version: ImageMagick 7.0.7-1 Q16 x64 2017-09-09 http://www.imagemagick.org
+    Copyright: Copyright (C) 1999-2015 ImageMagick Studio LLC
 
 ## PNGOut.exe
 
 PNGOut.exe is used to compress the daylights out of the png. Get it here: http://advsys.net/ken/utils.htm. Verify that if you open a new CMD window, the following command shows you pngout help:
 
     pngout
+
+You should see a bunch of documentation.
 
 ## InnoSetup
 
