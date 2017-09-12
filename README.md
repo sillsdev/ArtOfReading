@@ -13,9 +13,11 @@ The following instructions are for people working in Windows, but could be readi
 
 # 1) Clone this repository into your own github account.
 
-(Click the grean 'clone' button)
+(Click the green 'clone' button)
 
 # 2) Set up programs on you machine
+
+If you don't know about setting the PATH variable, this process is probably going to be more technical than you are used to. The first 3 programs below will each need to have an entry in your Windows PATH variable, and you're going to have to add it. There are various tutorials. Here's a good Google query to use: https://www.google.com/search?q=set+windows+path+variable+-java&oq=set+windows+path+variable+-java. Note that if you have a CMD window open, it won't "see" changes you've made to the PATH variable. You need to close the CMD window and re-open.
 
 ## ExifTool
 
@@ -27,17 +29,19 @@ ExifTool is used to embed your intellectual property information into each image
 
 ImageMagick can be used to convert you images to PNG. If your collection contains jpgeg photographs or very complicated color drawings that include shading and such, then this is not what you want. Please contact us.
 
-Get it at http://www.imagemagick.org/script/convert.php. Use the installer version, and verify that if you open a new CMD window, this command works:
+Get it at http://www.imagemagick.org/script/download.php. Get the first choice under "Windows Binary Release", and verify that if you open a new CMD window, this command works:
 
     convert --version
 
 ## PNGOut.exe
 
-PNGOut.exe is used to compress the daylights out of the png. Get it here: http://advsys.net/ken/utils.htm
+PNGOut.exe is used to compress the daylights out of the png. Get it here: http://advsys.net/ken/utils.htm. Verify that if you open a new CMD window, the following command shows you pngout help:
+
+    pngout
 
 ## InnoSetup
 
-InnoSetup will make your installer. Get it here: http://www.jrsoftware.org/isdl.php
+InnoSetup will make your installer. Get the unicode version here: http://www.jrsoftware.org/isdl.php
 
 # 2) See if you can create the Sample Collection
 
@@ -45,7 +49,7 @@ Before customizing anything, test out your setup by creating the sample collecti
 
     process-images.bat
 
-That should creat an /output folder and an /output/processed-images folder, with two png image files.
+That should create an /output folder and an /output/processed-images folder, with two png image files.
 
 Now make an an installer. Double click the "installer.iss" file. InnoSetup should run. Click "Build:Compile". That should create "/output/Shapes Collection 1.0.exe". Now run that program. When it is done, look in %programdata%\SIL\ImageCollections\. You should see a "Shapes".
 
@@ -77,7 +81,7 @@ For each image in /images/
 	Compress it really well, using PNGOut.
 	Push in metadata, using exiftool.
 
-There is no currently no way here to read the index and embed things like the artist name or index terms into the image. You may notice that Art Of Reading images do have that, but that was done with some other process. We consider embedding the artist name to be very imporant and helpful, but that is not yet part of this project.
+There is no currently no way here to read the index and embed things like the artist name or index terms into the image. You may notice that Art Of Reading images do have that, but that was done with some other process. We consider embedding the artist name to be very important and helpful, but that is not yet part of this project.
 
 # Make the installer
 
