@@ -5,6 +5,7 @@
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (Important!!!!! Replace this with your own guid from https://www.guidgen.com/)
+; The weird double {{ at the beginning here is intentional:
 AppId={{EABF2D6A-B9B9-48B1-8CC2-F7FEA667B653}
 AppName=Art Of Reading Free
 AppVersion=3.3.0

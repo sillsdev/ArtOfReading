@@ -52,7 +52,7 @@ FOR /R %dest% %%1 in (*.png, *.tif, *.bmp) DO (
 	set RESULT="%%~dp1!NEWNAME!"
 
 	REM use imagemagick-covert to convert images to png if needed
-	call "convert" !SRC! !RESULT!
+	call "magick" "convert" !SRC! !RESULT!
 
 	REM if we've made a copy with a different name, remove the original from /process-images
 	IF NOT !SRC!==!RESULT! (
@@ -61,7 +61,7 @@ FOR /R %dest% %%1 in (*.png, *.tif, *.bmp) DO (
 
 	REM use imagemagick-convert to add a watermark
 	IF "%WATERMARK%" NEQ "" (
-		call "convert" -pointsize 20 -gravity SouthWest -annotate +10+10 "%WATERMARK%" !RESULT! !RESULT!
+		call "magick" "convert" -pointsize 20 -gravity SouthWest -annotate +10+10 "%WATERMARK%" !RESULT! !RESULT!
 	)
 
 	REM /ktEXt,zTXt makes it preserve the metadata, but seems to prevent most of the compression
