@@ -5,6 +5,7 @@
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (Important!!!!! Replace this with your own guid from https://www.guidgen.com/)
+; The weird double {{ at the beginning here is intentional:
 AppId={{ac5740d7-7497-478d-b2ef-8b0a4a950a7c}
 AppName=Shapes Collection
 AppVersion=1.0.0

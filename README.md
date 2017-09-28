@@ -83,6 +83,10 @@ For example, this row is for a file named "B-NA-2". It could end in ".tif", ".pn
 
 B-NA-2(tab)Brazil(tab)Romero Britto(tab)Brazil(tab)bird,bird of prey,hawk,flying(tab)птица,хищная птица(tab)burung,burung pemangsa
 
+An easy mistake to make when creating index.txt is to lose the unicode (utf-8) formatting. For example, you might create the index in a spreadsheet program, then export as "tab delimited text". Make sure you tell it to create a unicode (utf-8) document, otherwise any non-Western character will be changed to a question mark.
+
+You should also ensure that no file is listed twice. If you do, it will cause an error in Bloom or wherever your collection is used. One way to check for duplicates is, in your spreadsheet program, turn on "conditional formatting" where the condition is "duplicate".
+
 # Processing your images
 
 The idea is that we need an automated process that will take each image in the images/ directory, get it all ready, and deposit it in the /output/process-images directory. You never commit anything in /output to github; instead the installer maker will gather file from there when it makes the installer. For that we have process-images.bat.
@@ -101,6 +105,8 @@ There is no currently no way here to read the index and embed things like the ar
 Double click on the "installer.iss" file. Innosetup should open.
 
 Replace the values of the sample collection with your own values.
+
+Don't miss that you need to replace the appid guid there with a unique on for your library. Otherwise, installing one library would replace another on the user's computer.
 
 Click "Build:Compile". That should create "/output/Shapes Collection 1.0.exe".
 
