@@ -4,3 +4,6 @@ images*
 .idea
 node_modules
 *-compiled.js*
+\.vscode/
+
+art-of-reading-tiffs\.tar

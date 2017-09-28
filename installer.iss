@@ -6,6 +6,7 @@
 ; Do not use the same AppId value in installers for other applications.
 ; (Important!!!!! Replace this with your own guid from https://www.guidgen.com/)
 ; The weird double {{ at the beginning here is intentional:
+; last version was AppId={{EABF2D6A-B9B9-48B1-8CC2-F7FEA667B653}
 AppId={{EABF2D6A-B9B9-48B1-8CC2-F7FEA667B653}
 AppName=Art Of Reading Free
 AppVersion=3.3.0
@@ -17,20 +18,26 @@ DefaultDirName={commonappdata}\SIL\ImageCollections\Art Of Reading
 DefaultGroupName=Art Of Reading Free
 OutputBaseFilename= Art Of Reading Free Setup 3.3
 DisableProgramGroupPage=yes
-LicenseFile=InstallerLicense.txt
+LicenseFile=InstallerLicense.rtf
 InfoBeforeFile=info-to-show-in-installer.txt
-OutputDir=output
+OutputDir="output"
 Compression=none
 SourceDir=".\"
 DisableDirPage=yes
+; AOR 3.2 was in SIL\. Starting with 3.3 and libpalaso's multiple collection system, we want SIL\ImageCollections
+UsePreviousAppDir=no
 ;SignTool=standard
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
+; if they had aor 3.2 or earlier installed, remove those files, which were in a different directory
+[InstallDelete]
+Type: filesandordirs; Name: "{commonappdata}\SIL\Art Of Reading"
+
 [Files]
 Source: "output\processed-images\**.png"; DestDir: "{app}\images"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "index.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "InstallerLicense.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "InstallerLicense.rtf"; DestDir: "{app}"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files

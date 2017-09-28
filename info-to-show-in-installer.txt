@@ -6,6 +6,6 @@ A special feature of this package is that we have embedded, in the image files t
 
 Once this package is installed, WeSay and Bloom will automatically find and use it.
 
-http://wesay.palaso.org
+http://software.sil.org/wesay
 http://bloomlibrary.org
 http://www.ethnologue.com/show_product.asp?isbn=9781556712418
