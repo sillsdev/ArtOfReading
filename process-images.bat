@@ -12,7 +12,10 @@ set LICENSE=http://creativecommons.org/licenses/by-sa/4.0/
 set ATTRIBUTIONURL=http://myOrganization.org
 set COLLECTIONURI=http://myOrganization.org/aboutShapesImages
 set COLLECTIONNAME=Shapes Images
-REM this is optional; you might like to prefix all images wit something indicating the collection it came from. If not, set to just PREFIX=
+REM This is optional; you might like to prefix all images wit something indicating the collection it came from.
+REM If you use it, make sure that your index.txt uses the same names as what this produces, including the prefix
+REM and file extension (e.g. .png and .jpg).
+REM If you don't want to add  prefix to the files, set this to just "set PREFIX="  (i.e. nothing after the equals sign).
 set PREFIX=shape_
 REM This is optional, if you want to watermark each image. Otherwise, set to ""
 REM Note that the approach used below is pretty ugly, and we don't use it for Art Of Reading.

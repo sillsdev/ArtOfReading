@@ -17,7 +17,7 @@ DefaultDirName={commonappdata}\SIL\ImageCollections\Shapes
 DefaultGroupName=Shapes
 OutputBaseFilename= Shapes Collection 1.0
 DisableProgramGroupPage=yes
-LicenseFile=InstallerLicense.txt
+LicenseFile=InstallerLicense.rtf
 InfoBeforeFile=info-to-show-in-installer.txt
 OutputDir=output
 Compression=none
@@ -31,6 +31,6 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 [Files]
 Source: "output\processed-images\**.png"; DestDir: "{app}\images"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "index.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "InstallerLicense.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "InstallerLicense.rtf"; DestDir: "{app}"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
