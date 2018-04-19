@@ -63,7 +63,7 @@ FOR /R %dest% %%1 in (*.png, *.tif, *.bmp) DO (
 	)
 
 	REM use imagemagick-convert to add a watermark
-	IF "%WATERMARK%" NEQ "" (
+	IF %WATERMARK% NEQ "" (
 		call "magick" "convert" -pointsize 20 -gravity SouthWest -annotate +10+10 "%WATERMARK%" !RESULT! !RESULT!
 	)
 
