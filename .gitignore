@@ -7,3 +7,5 @@ node_modules
 \.vscode/
 
 art-of-reading-tiffs\.tar
+
+*.exe
