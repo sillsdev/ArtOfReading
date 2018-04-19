@@ -19,9 +19,15 @@ The following instructions are for people working in Windows, but could be readi
 
 If you don't know about setting the PATH variable, this process is probably going to be more technical than you are used to. The first 3 programs below will each need to have an entry in your Windows PATH variable, and you're going to have to add it. There are various tutorials. Here's a good Google query to use: https://www.google.com/search?q=set+windows+path+variable+-java&oq=set+windows+path+variable+-java. Note that if you have a CMD window open, it won't "see" changes you've made to the PATH variable. You need to close the CMD window and re-open.
 
+Add this folder (where this readme and process-images.bat are) to your PATH (this will help in finding pngout).
+
 ## ExifTool
 
-ExifTool is used to embed your intellectual property information into each image. Get it at http://www.sno.phy.queensu.ca/~phil/exiftool/ and install it. Verify that if you open a new CMD window, this command works:
+ExifTool is used to embed your intellectual property information into each image. Get it at http://www.sno.phy.queensu.ca/~phil/exiftool/ and install it. In April 2018, it does not have an actual installer, so here are some steps:
+1. Get the "windows executable", unzip it into this folder, alongside the file named 'process-images.bat'.
+2. Rename it from "exiftool(-k).exe" to just "exiftool.exe".
+
+Verify that if you open a new CMD window and cd to this folder, this command works:
 
     exiftool -ver
 
@@ -46,11 +52,11 @@ You should see something like
 
 ## PNGOut.exe
 
-PNGOut.exe is used to compress the daylights out of the png. Get it here: http://advsys.net/ken/utils.htm. Verify that if you open a new CMD window, the following command shows you pngout help:
+PNGOut.exe is used to compress the daylights out of the png. Get it here: http://advsys.net/ken/utils.htm. Like exiftool, it lacks an installer. So put the file named pngout.exe in this folder, alongside the file named 'process-images.bat'. Type following command in a CMD window while cd'd into this folder:
 
     pngout
 
-You should see a bunch of documentation.
+You should see a bunch of documentation on how to use pngout, which you can ignore.
 
 ## InnoSetup
 
