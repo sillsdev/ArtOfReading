@@ -1,60 +1,14 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: art-of-reading
+Upstream-Name: art-of-reading3
 Source: <url://example.com>
 
-Files: *.txt
-Copyright: 2009 SIL International
-License: Creative Commons Attribution-NoDerivs 3.0
-
-Files: debian/*
+Files: *
 Copyright: 2014 SIL International
 License: MIT
 
-Files: images/*
-Copyright: 2009 SIL International (or as specified inside image file)
-License: Creative Commons Attribution-NoDerivs 3.0
-
-License: Creative Commons Attribution-NoDerivs 3.0
- SIL grants you use of these images under the terms of the Creative
- Commons Attribution-NoDerivs 3.0 License.  The full legal code is
- here: http://creativecommons.org/licenses/by-nd/3.0/legalcode. The
- following is a human-readable summary:
- .
- You are free:
-    to Share - to copy, distribute and transmit the work
-    to make commercial use of the work
- .
- Under the following conditions:
-    Attribution - You must attribute the work to SIL International
-        (but not in any way that suggests that they endorse you or your
-        use of the work).
-    No Derivative Works - You may not alter, transform, or build upon
-        this work. (See exception below)
- .
- With the understanding that:
-    Waiver - Any of the above conditions can be waived if you get
-        permission from the copyright holder.
-    Public Domain - Where the work or any of its elements is in the
-        public domain under applicable law, that status is in no way
-        affected by the license.
-    Other Rights - In no way are any of the following rights affected
-        by the license:
-            Your fair dealing or fair use rights, or other applicable
-                copyright exceptions and limitations;
-            The author's moral rights;
-            Rights other persons may have either in the work itself or
-                in how the work is used, such as publicity or privacy
-                rights.
-    Notice - For any reuse or distribution, you must make clear to
-        others the license terms of this work. The best way to do this is
-        with a link to http://creativecommons.org/licenses/by-nd/3.0/
- .
- In addition to the Creative Commons license above, SIL International grants
- the right to crop and resize the images.
-
 License: MIT
- The Debian packaging is licensed under the MIT License as described at
- http://opensource.org/licenses/MIT.
+ Unless otherwise noted, the files are copyright by SIL International and
+ licensed under the MIT license (http://opensource.org/licenses/MIT).
  .
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -73,3 +27,45 @@ License: MIT
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
+
+Files: *.txt
+Copyright: 2009 SIL International
+License: CC-BY-SA-4.0
+
+Files: ImageCollections/ArtOfReading/images/*
+Copyright: 2009 SIL International (or as specified inside image file)
+License: CC-BY-SA-4.0
+
+License: CC-BY-SA-4.0
+ SIL grants you use of these images under the terms of the Creative Commons
+ Attribution-ShareAlike 4.0 International License.  The full legal code is
+ here: https://creativecommons.org/licenses/by-sa/4.0/legalcode.  The
+ following is a human-readable summary.
+ .
+ You are free to:
+    Share - copy and redistribute the material in any medium or format
+    Adapt - remix, transform, and build upon the material for any purpose,
+            even commercially.
+ The licensor cannot revoke these freedoms as long as you follow the license
+ terms.
+ .
+ Under the following terms:
+    Attribution - You must give appropriate credit, provide a link to the
+        license, and indicate if changes were made. You may do so in any
+        reasonable manner, but not in any way that suggests the licensor
+        endorses you or your use.
+    ShareAlike - If you remix, transform, or build upon the material, you
+        must distribute your contributions under the same license as the
+        original.
+    No additional restrictions — You may not apply legal terms or
+        technological measures that legally restrict others from doing
+        anything the license permits.
+ .
+ Notices:
+    You do not have to comply with the license for elements of the material
+    in the public domain or where your use is permitted by an applicable
+    exception or limitation.
+    No warranties are given. The license may not give you all of the
+    permissions necessary for your intended use. For example, other rights
+    such as publicity, privacy, or moral rights may limit how you use the
+    material.

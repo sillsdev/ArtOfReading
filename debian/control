@@ -1,12 +1,12 @@
-Source: art-of-reading
+Source: art-of-reading3
 Section: data
 Priority: optional
 Maintainer: Stephen McConnel <stephen_mcconnel@sil.org>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.3
+Standards-Version: 3.9.7
 Homepage: http://bloomlibrary.org/#/art-of-reading
 
-Package: art-of-reading
+Package: art-of-reading3
 Architecture: all
 Depends: ${misc:Depends}
 Description: artwork images collection
@@ -25,5 +25,7 @@ Description: artwork images collection
  Hundreds of universal images like dog, bicycle, book, cup, pencil,
  snake, etc.
  .
- The images may be reused with attribution but may not be modified 
- and then republished.
+ The images may be reused with attribution, and may even be modified and
+ then republished with the same license as the originals.  The license
+ is known as Creative Commons Attribution-ShareAlike 4.0 International
+ (CC BY-SA 4.0).

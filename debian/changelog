@@ -1,3 +1,12 @@
+art-of-reading3 (3.3) stable; urgency=medium
+
+  * Updated licenses in image files to Attribution-ShareAlike 4.0 International
+    (CC BY-SA 4.0).
+  * Revised installation folder structure to facilitate multiple image
+    collections.
+
+ -- Stephen McConnel <stephen_mcconnel@sil.org>  Wed, 07 Feb 2018 11:10:38 -0700
+
 art-of-reading (3.0.2) stable; urgency=medium
 
   * Add a multilingual index file.
