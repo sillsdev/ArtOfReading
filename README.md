@@ -5,15 +5,13 @@ copyright are embedded in each image. AOR is currently distributed from http://b
 
 The following instructions are for people working in Windows.
 
-# 1) Set up programs on you machine
-
-The following instructions are for people working in Windows, but could be readily adapted for Linux.
-
 # 1) Clone this repository into your own github account.
 
 (Click the green 'clone' button)
 
 # 2) Set up programs on you machine
+
+The following instructions are for people working in Windows, but could be readily adapted for Linux.
 
 If you don't know about setting the PATH variable, this process is probably going to be more technical than you are used to. The first 3 programs below will each need to have an entry in your Windows PATH variable, and you're going to have to add it. There are various tutorials. Here's a good Google query to use: https://www.google.com/search?q=set+windows+path+variable+-java&oq=set+windows+path+variable+-java. Note that if you have a CMD window open, it won't "see" changes you've made to the PATH variable. You need to close the CMD window and re-open.
 
@@ -83,6 +81,9 @@ That should create an /output folder and an /output/processed-images folder.
 
 Now make an an installer. Double click the "installer.iss" file. InnoSetup should run. Click "Build:Compile". That should create "/output/ArtOfReading.exe". Now run that program. When it is done, look in %programdata%\SIL\ImageCollections\. You should see a "Art Of Reading".
 
+#4) Sign the installer
+
+Windows will make it scary for anyone to use the installer until it is signed by someone (e.g. SIL Intl).
 
 ---
 ## Relevant documentation on metadata
