@@ -77,11 +77,11 @@ Run
 
 That should create an /output folder and an /output/processed-images folder.
 
-#3) Create the installer
+# 3) Create the installer
 
 Now make an an installer. Double click the "installer.iss" file. InnoSetup should run. Click "Build:Compile". That should create "/output/ArtOfReading.exe". Now run that program. When it is done, look in %programdata%\SIL\ImageCollections\. You should see a "Art Of Reading".
 
-#4) Sign the installer
+# 4) Sign the installer
 
 Windows will make it scary for anyone to use the installer until it is signed by someone (e.g. SIL Intl).
 
