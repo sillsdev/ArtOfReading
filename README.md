@@ -3,15 +3,13 @@ The Art Of Reading DVD contains TIFs, with no embedded metadata.
 Art Of Reading Free (this project) instead contains PNGs in which the license and
 copyright are embedded in each image. AOR is currently distributed from http://bloomlibrary.org/artofreading. It can be used with any software that supports SIL's [simple image gallery format](https://github.com/sillsdev/image-collection-starter), including [Bloom](http://bloomlibrary.org) and [WeSay](http://software.sil.org/wesay).
 
-The following instructions are for people working in Windows.
+The following instructions are for people working in Windows, but could be readily adapted for Linux.
 
 # 1) Clone this repository into your own github account.
 
-(Click the green 'clone' button)
+(Click the green 'Clone or download' button above)
 
-# 2) Set up programs on you machine
-
-The following instructions are for people working in Windows, but could be readily adapted for Linux.
+# 2) Set up programs on your machine
 
 If you don't know about setting the PATH variable, this process is probably going to be more technical than you are used to. The first 3 programs below will each need to have an entry in your Windows PATH variable, and you're going to have to add it. There are various tutorials. Here's a good Google query to use: https://www.google.com/search?q=set+windows+path+variable+-java&oq=set+windows+path+variable+-java. Note that if you have a CMD window open, it won't "see" changes you've made to the PATH variable. You need to close the CMD window and re-open.
 
