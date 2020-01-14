@@ -5,7 +5,7 @@ copyright are embedded in each image. AOR is currently distributed from http://b
 
 The following instructions are for people working in Windows, but could be readily adapted for Linux.
 
-# 1) Clone this repository into your own github account.
+# 1) Clone (download) this repository to your machine
 
 (Click the green 'Clone or download' button above)
 
